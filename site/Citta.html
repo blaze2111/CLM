@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>CLM</title>
+    <style>
+        body{
+        margin: 0;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #0089cf;
+        padding: 10px 20px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 18px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        flex-wrap: wrap;
+    }
+
+
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links li a {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .nav-links li a:hover {
+        text-decoration: underline;
+    }
+
+
+    .dowload {
+        background-color: white;
+        color: black;
+        padding: 8px 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        font-family: "Fira Sans", sans-serif;
+        transition: border-radius 0.5s ease;
+    }
+
+    .dowload:hover {
+        border-radius: 20px;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .download-link {
+            display: none;
+        }
+    }
+
+
+
+    .textcitta1{
+        text-align: center;
+    }
+
+
+    .textcitta1 p{
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 450;
+        font-style: normal;
+        font-size: 16px;
+    }
+
+    .textcitta1 h1{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 650;
+    }
+
+
+    .animatedtext{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 650;
+        font-size: 100px;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;;
+    }
+
+    .animatedtext h1 {
+        display: inline-block;
+        animation: scrollText 24s linear infinite;
+        min-width: 100%; 
+        color: #0089cf;
+    }
+
+    @keyframes scrollText {
+        from {
+            transform: translateX(0%);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+
+
+    .città2 {
+        display: flex;
+        justify-content: center; /* Centra gli elementi */
+        align-items: center;
+        gap: 40px; /* Riduce la distanza tra i due blocchi */
+        padding: 40px;
+        background-color: white;
+        max-width: 900px; /* Restringe la larghezza del contenitore */
+        margin: auto; /* Centra il blocco nella pagina */
+    }
+
+    .text1città2 {
+        max-width: 350px; /* Limita la larghezza del testo */
+        text-align: left;
+    }
+
+    .text1città2 h2 {
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 450;
+        font-style: normal;
+        font-size: 16px;
+    }
+
+    .text1città2 h1 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 650;
+    }
+
+    .text2città2 {
+        max-width: 500px; /* Limita la larghezza del paragrafo */
+        font-size: 18px;
+        color: #333;
+        text-align: left;
+        font-family: "Montserrat", sans-serif;
+        text-align: justify;
+            text-justify: inter-word;
+
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #0089cf;
+        color: white;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .info {
+        text-align: right;
+        font-family: "Montserrat", sans-serif;
+
+        font-weight: 500;
+        font-style: normal;
+
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html"><img id="logonav" src="main-logo.png" alt=""></a></div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Citta.html" style="color: white;">Città</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+        <a href="https://play.google.com/store/apps/details?id=ch.selise.smartcity.clmlogistics&hl=it" target="_blank"><button class="dowload">Scarica l'App</button></a>
+    </nav>
+    
+    
+    <br/><br/><br/><br/><br/><br/>
+    
+    
+    
+    <div class="citta1">
+        <div class="textcitta1">
+            <p>DOVE SIAMO?</p>
+            <h1>Scopri le nostre città</h1>
+        </div>
+        <div class="animatedtext"><h1>&nbsp;&nbsp;ROMA FIRENZE MILANO BOLOGNA CAGLIARI ROMA FIRENZE MILANO BOLOGNA CAGLIARI</h1></div>
+    </div>
+
+
+    <div class="città2">
+        <div class="text1città2">
+            <h2>LA NOSTRA MISSIONE</h2>
+            <h1>Città più verdi, salutari e sostenibili</h1>
+        </div>
+        <div class="text2città2">
+            <p>Ridefiniamo la mobilità urbana, creando città più sostenibili. CLM collabora con numerose città in Italia per migliorare la qualità della vita urbana. Lavoriamo insieme per rendere le nostre città più sostenibili, cambiando il modo in cui le persone si muovono. Il nostro servizio di mobilità a flusso libero è parte integrante del sistema di trasporto pubblico, riduce il traffico, le emissioni di CO2 e rafforza il coinvolgimento dei cittadini nelle comunità.</p>
+        </div>
+    </div>
+    
+    <br/><br/><br/><br/>
+    
+
+    <footer class="footer">
+        <div class="logo">
+            <img src="main-logo.png" alt="">
+        </div>
+        <div class="info">
+            <p>Email: CLMSupport@gmail.com</p>
+            <p>Telefono: +39 123 456 789</p>
+            <p>Sede Legale: Via Montebello, 23, 00185 Roma RM</p>
+        </div>
+    </footer>
+</body>
+</html>

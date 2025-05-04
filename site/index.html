@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>CLM</title>
+    <style>
+    
+    body{
+        margin: 0;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #0089cf;
+        padding: 10px 20px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 18px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        flex-wrap: wrap;
+    }
+
+
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links li a {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .nav-links li a:hover {
+        text-decoration: underline;
+    }
+
+
+    .dowload {
+        background-color: white;
+        color: black;
+        padding: 8px 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        font-family: "Fira Sans", sans-serif;
+        transition: border-radius 0.5s ease;
+    }
+
+    .dowload:hover {
+        border-radius: 20px;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .download-link {
+            display: none;
+        }
+    }
+
+
+    .home1 {
+        background-image: url('https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2016/12/27132742/Philly_Indego_Bikeshare.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+    .home1 h1{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 100px;
+        margin-bottom: 600px;
+    }
+
+    .home1 span{
+        color: #0270a7;
+    }
+
+    .veichintr{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .veichle1, .veichle2 {
+        display: flex;
+        flex-direction: column; /* Posiziona gli elementi in verticale */
+        align-items: center;
+        padding: 40px;
+        background-color: white;
+        font-family: "Montserrat", sans-serif;
+
+    }
+
+    .veichtext {
+        max-width: 500px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .veichtext h2 {
+        color: black;
+        font-size: 28px;
+    }
+
+    .veichtext p {
+        font-size: 18px;
+        color: #333;
+        text-align: justify;
+        text-justify: inter-word;
+        
+    }
+
+    .veichles span{
+        color: #0089cf;
+    }
+
+
+    .veichimg img {
+        margin-left: 190px;
+        max-width: 70%;
+        height: auto;
+    }
+
+
+    .contmap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .textmap {
+        width: 40%;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        margin-left: 150px;
+    }
+    .map {
+        width: 55%;
+    }
+    map {
+        width: 100%;
+        height: 300px;
+        border: none;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #0089cf;
+        color: white;
+    }
+
+    .logo img {
+        width: 120px; /* Adatta la dimensione */
+    }
+
+    .info {
+        text-align: right;
+        font-family: "Montserrat", sans-serif;
+
+        font-weight: 500;
+        font-style: normal;
+
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html"><img id="logonav" src="main-logo.png" alt=""></a></div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html" style="color: white;">Home</a></li>
+            <li><a href="Citta.html">Città</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+        <a href="https://play.google.com/store/apps/details?id=ch.selise.smartcity.clmlogistics&hl=it" target="_blank"><button class="dowload">Scarica l'App</button></a>
+    </nav>
+
+    <div class="home1">
+        <h1><span>C</span>ondividi <span>L</span>a <span>M</span>obilità</h1>
+    </div>
+
+    <br/><br/><br/><br/>
+    <div class="veichles">
+        <div class="veichintr">
+            <h2>Scegli il mezzo più adatto <br>per ogni spostamento</h2>
+        </div>
+        <div class="veichle1">
+            <div class="veichimg">
+                <img src="bike.png" alt="">
+            </div>
+            <div class="veichtext">
+                <h2><span>CLM</span> Bike</h2>
+                <p>La soluzione ideale per gli spostamenti più lunghi, con un'autonomia di 80 km e una velocità massima di 25 km/h. Il supporto per smartphone consente di navigare facilmente e raggiungere la tua destinazione!</p>
+            </div>
+        </div>
+        <div class="veichle2">
+            <div class="veichimg">
+                <img src="scooter.png" alt="">
+            </div>
+            <div class="veichtext">
+                <h2><span>CLM</span> Scooter</h2>
+                <p>Preparati ad esplorare la città con stile alla guida del nuovo arrivato nella flotta CLM.</p>
+            </div>
+        </div>
+    </div>
+
+    <br/><br/><br/><br/>
+
+    <div class="contmap">
+        <div class="textmap">
+            <h1>Scopri i nostri  <br>centri di Noleggio</h1>
+        </div>
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83669.43476557004!2d12.479249435880051!3d41.929009993451274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61ddae5942d7%3A0xaf0a2d4935d1e435!2sBike%20Rent!5e1!3m2!1sit!2sit!4v1746369846742!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+
+    <footer class="footer">
+        <div class="logo">
+            <img src="main-logo.png" alt="">
+        </div>
+        <div class="info">
+            <p>Email: CLMSupport@gmail.com</p>
+            <p>Telefono: +39 123 456 789</p>
+            <p>Sede Legale: Via Montebello, 23, 00185 Roma RM</p>
+        </div>
+    </footer>
+    
+
+    
+
+</body>
+</html> 
